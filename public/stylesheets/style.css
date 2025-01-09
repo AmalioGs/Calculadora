@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Luckiest Guy", cursive;
+}
+
+button {
+  background-color: transparent;
+  border: transparent;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/monopoly-bg2.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.socra {
+  margin-top: 255px;
+  margin-left: 905px;
+  color: #35AB6D;
+  font-size: 2.4rem;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+  background: linear-gradient (67deg, #42d392, #647eff, #2980B9);
+  cursor: pointer;
+}
+
+.calculadora {
+  position: absolute;
+  top: 55%;
+  left: 30.8%;
+  width: 250px;
+  height: 258px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #cde6d0;
+  border-radius: 5px;
+  box-shadow: -5px -5px 10px 0 rgba(255, 255, 255, 0.5), 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+
+  input#screen {
+    color: #69AA70;
+    margin-top: 20px;
+    width: 60%;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #cde6d0;
+    border-radius: 3px;
+    box-shadow: inset -5px -5px 10px 0 rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+    border: none;
+  }
+}
+
+section {
+  .calculadora {
+      position: absolute;
+      top: 29%;
+      left: 45%;
+      width: 460px;
+      height: 608px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #cde6d0;
+      border-radius: 5px;
+      box-shadow: -5px -5px 10px 0 rgba(255, 255, 255, 0.5), 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  input#screen {
+    color: #69AA70;
+    margin-top: 20px;
+    width: 60%;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #cde6d0;
+    border-radius: 3px;
+    box-shadow: inset -5px -5px 10px 0 rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+    border: none;
+  }
+  
+  .fila {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  button {
+    width: 100px;
+    height: 120px;
+    cursor: pointer;
+    margin: 4px;
+    background-color: transparent;
+    border: transparent;
+  }
+  
+  button img {
+    width: 100%;
+    height: auto;
+    box-shadow: -5px -5px 10px 0 rgba(255, 255, 255, 0.5), 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+  }
+}
+
+.boton-numero img {
+  width: 100%; 
+  height: auto; 
+  transition: opacity;
+}
+
+.boton-numero:hover img,
+.boton-numero2:hover img,
+.boton-numero3:hover img,
+.boton-numero4:hover img,
+.boton-numero5:hover img,
+.boton-numero6:hover img,
+.boton-numero7:hover img,
+.boton-numero8:hover img,
+.boton-numero9:hover img,
+.boton-numero10:hover img,
+.boton-numero11:hover img,
+.boton-numero12:hover img,
+.boton-numero13:hover img,
+.boton-numero14:hover img,
+.boton-numero15:hover img,
+.boton-numero16:hover img {
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  border: 2px solid black;
+  box-shadow: -5px -5px 10px 0 rgba(255, 255, 255, 0.5), 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.boton-numero:hover img {
+  content: url('/images/Alba1.jpg');
+}
+
+.boton-numero2:hover img {
+  content: url('/images/Ale1.jpg');
+}
+
+.boton-numero3:hover img {
+  content: url('/images/Ali1.jpg');
+}
+
+.boton-numero4:hover img {
+  content: url('/images/Amalio1.jpg');
+}
+
+.boton-numero5:hover img {
+  content: url('/images/Angeles1.jpg');
+}
+
+.boton-numero6:hover img {
+  content: url('/images/Carlos1.jpg');
+}
+
+.boton-numero7:hover img {
+  content: url('/images/David1.jpg');
+}
+
+.boton-numero8:hover img {
+  content: url('/images/Fran1.jpg');
+}
+
+.boton-numero9:hover img {
+  content: url('/images/FranGPT1.jpg');
+}
+
+.boton-numero10:hover img {
+  content: url('/images/Gustavo1.jpg');
+}
+
+.boton-numero11:hover img {
+  content: url('/images/Lidia1.jpg');
+}
+
+.boton-numero12:hover img {
+  content: url('/images/Lucia1.jpg');
+}
+
+.boton-numero13:hover img {
+  content: url('/images/Micka1.jpg');
+}
+
+.boton-numero14:hover img {
+  content: url('/images/Santi1.jpg');
+}
+
+.boton-numero15:hover img {
+  content: url('/images/Sergio1.jpg');
+}
+
+.boton-numero16:hover img {
+  content: url('/images/Virginia1.jpg');
+}

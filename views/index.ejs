@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./javascripts/calculator.js" charset="UTF-8"></script>
+</head>
+<body>
+
+    <div>
+        <button class="socra"
+            onclick="window.open('https://www.linkedin.com/school/escuela-socratech/posts/?feedView=all', )" > SocraTech linkedin
+        </button>
+    </div>
+
+    <div class="calculadora">
+      <br>
+      <br>
+      <form action="/user/createUser" method="post" enctype="multipart/form-data">
+          <div>
+            <label for="TextInputNombre" class="form-label">Nombre Usuario</label>
+            <br>
+            <input 
+              type="text" 
+              id="TextInputNombre" 
+              class="form-control" 
+              placeholder="Nombre usuario"
+              name="name"
+              >
+          </div>
+          <div>
+            <label for="TextInputCountry" class="form-label">Pais de origen</label>
+            <br>
+            <input 
+              type="text" 
+              id="TextInputCounttry" 
+              class="form-control" 
+              placeholder="Pais de origen"
+              name="country"
+              >
+          </div>
+          <div class="mb-3">
+            <label for="TextInputTel" class="form-label">Teléfono</label>
+            <br>
+            <input 
+              type="text" 
+              id="TextInputTel" 
+              class="form-control" 
+              placeholder="Teléfono contacto"
+              name="tel"                
+              >
+          </div>
+          <div class="mb-3">
+            <label for="fileInput" class="form-label">Agrega una imagen</label>
+            <br>
+            <input 
+              type="file" 
+              id="fileInput" 
+              class="form-control"
+              name="img"
+              hidden
+              >
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary">Registrar</button>
+      </form>
+    </div>
+
+
+    <section>
+        <div class="calculadora">
+            <input type="text" id="screen" />
+            <div class="fila">
+                <button class="boton-numero" onclick="addToScreen('1')">
+                    <img src="./images/Numero_1.png" alt="Numero 1">
+                </button>
+                <button class="boton-numero2" onclick="addToScreen('2')">
+                    <img src="./images/Numero_2.png" alt="Numero 2">
+                </button>
+                <button class="boton-numero3" onclick="addToScreen('3')">
+                    <img src="./images/Numero_3.png" alt="Numero 3">
+                </button>
+                <button class="boton-numero4" onclick="addToScreen('+')">
+                    <img src="./images/Signo_+.png" alt="Signo +">
+                </button>
+            </div>
+            <div class="fila">
+                <button class="boton-numero5" onclick="addToScreen('4')">
+                    <img src="./images/Numero_4.png" alt="Numero 4">
+                </button>
+                <button class="boton-numero6" onclick="addToScreen('5')">
+                    <img src="./images/Numero_5.png" alt="Numero 5">
+                </button>
+                <button class="boton-numero7" onclick="addToScreen('6')">
+                    <img src="./images/Numero_6.png" alt="Numero 6">
+                </button>
+                <button class="boton-numero8" onclick="addToScreen('-')">
+                    <img src="./images/Signo=-.png" alt="Signo -">
+                </button>
+            </div>
+            <div class="fila">
+                <button class="boton-numero9" onclick="addToScreen('7')">
+                    <img src="./images/Numero_7.png" alt="Numero 7">
+                </button>
+                <button class="boton-numero10" onclick="addToScreen('8')">
+                    <img src="./images/Numero_8.png" alt="Numero 8">
+                </button>
+                <button class="boton-numero11" onclick="addToScreen('9')">
+                    <img src="./images/Numero_9.png" alt="Numero 9">
+                </button>
+                <button class="boton-numero12" onclick="addToScreen('*')">
+                    <img src="./images/Signo_.png" alt="Signo *">
+                </button>
+            </div>
+            <div class="fila">
+                <button class="boton-numero13" onclick="calculateScreen()">
+                    <img src="/images/Signo_=.png" alt="Signo =">
+                </button>
+                <button class="boton-numero14" onclick="clearScreen()">
+                    <img src="/images/Clear.png" alt="Clear">
+                </button>
+                <button class="boton-numero15" onclick="addToScreen('0')">
+                    <img src="/images/Numero_0.png" alt="Numero 0">
+                </button>
+                <button class="boton-numero16" onclick="addToScreen('/')">
+                    <img src="/images/Signo__.png" alt="Signo /">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <audio id="equalSound" src="./sound/coin.mp3"></audio>
+    <audio id="equalSound1" src="./sound/clear.mp3"></audio>
+    <audio id="equalSound2" src="./sound/last.mp3"></audio>
+    <audio id="equalSound4" src="./sound/error.mp3"></audio>
+    <audio id="equalSound5" src="./sound/bucle.mp3"></audio>
+    
+</body>
+</html>
